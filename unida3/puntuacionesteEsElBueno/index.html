@@ -14,7 +14,6 @@
 
     <section class="container my-5">
         
-        <!-- SECCIÓN 1: TEMPERATURAS -->
         <div class="card p-4 mb-4 shadow-sm">
             <h3>1. Temperaturas de los 7 días</h3>
             <div class="mt-3">
@@ -33,7 +32,6 @@
             <p id="maxima"></p>
         </div>
 
-        <!-- SECCIÓN 2: PATRÓN DEL NÚMERO 8 -->
         <div class="card p-4 mb-4 shadow-sm">
             <h3>2. Ejercicio 3: Patrón del Número 8</h3>
             <div class="mt-3">
@@ -44,7 +42,6 @@
             <div class="mt-3" id="impBloques"></div>
         </div>
 
-        <!-- SECCIÓN 3: GESTIÓN DE ALUMNOS -->
         <div class="card p-4 mb-4 shadow-sm">
             <h3>3. Gestión de Alumnos y Arreglos</h3>
             <div class="mt-3">
@@ -58,23 +55,20 @@
 
     </section>
 
-    <!-- Tu archivo JS principal (puedes meter tus funciones ahí o mantenerlas en el script de abajo) -->
     <script src="js/ola.js"></script>
 
-    <!-- Si prefieres tener las funciones directo en el archivo o complementarlas, aquí está la lógica nueva -->
     <script>
-        // Función del Patrón del 8 modificada con la letra O
         function construirPatronOcho() {
             let contenido = "<div style='font-family:monospace; font-size:20px; line-height:1.2; white-space:pre;'>";
             
             let matrizOcho = [
-                " OOO ",
+                " OOOOO ",
                 " O   O ",
                 " O   O ",
-                " OOO ",
+                " OOOOO ",
                 " O   O ",
                 " O   O ",
-                " OOO "
+                " OOOOO "
             ];
 
             for (let indice = 0; indice < matrizOcho.length; indice++) {
@@ -85,7 +79,6 @@
             document.getElementById("impBloques").innerHTML = contenido;
         }
 
-        // Variables y función de gestión de alumnos que pasaste
         let diasSemana = new Array(7);
         diasSemana[0] = "lunes";
         diasSemana[1] = "martes";
